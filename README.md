@@ -29,9 +29,6 @@ Frameworks and Technologies used:
 Bootstrap
 </li>
 <li>
-Webpack
-</li>
-<li>
 RapidApi
 </li>
 <li>
