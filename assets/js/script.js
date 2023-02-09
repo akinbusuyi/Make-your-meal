@@ -12,9 +12,10 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-subtn.addEventListener("click", ()=>{
-    feedback.innerHTML = "<h1>We appreciate your feedback</h1>"
+subtn.addEventListener('click', ()=>{
+    feedback.innerHTML = '<h2>We Appreciate your Feedback</h2>';
 });
+
 
 localStorage.setItem("name","feedback");
 
