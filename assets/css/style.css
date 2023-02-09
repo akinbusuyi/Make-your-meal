@@ -298,12 +298,12 @@ box-shadow: #F2A77F;
     font-weight: 600;
     width: 100%;
 }
-.bg-success {
-  text-align: center;
-  border: 0px solid red;
-  font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(240, 121, 36);
+.bg-success{
+    text-align: center;
+    border: 0px solid red;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(240, 121, 36);
 }
 /* Media Queries */
 @media screen and (min-width: 600px){
