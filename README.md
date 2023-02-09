@@ -72,7 +72,7 @@ To start your own recreation process, get a local copy up and running on your ma
 
 <br>
 Enter this in your terminal:
-git clone git@github.com:priyadarsini-gunasekaran/Make-A-Meal.git
+git clone git@github.com:akinbusuyi/Make-your-meal.git
 
 <br>
 Prerequisites
