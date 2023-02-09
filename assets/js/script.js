@@ -2,14 +2,23 @@ const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
+const subtn = document.querySelector(".subtn");
+const feedback = document.querySelector(".feedback-container");
 
-// event listeners
+// Adding event listeners
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+subtn.addEventListener("click", ()=>{
+  feedback.innerHTML = "<h1>We appreciate your feedback</h1>"
+});
+
+//using local storage 
+localStorage.setItem("name","feedback");
+ 
 
 // get meal list that matches with the ingredients
 function getMealList(){
@@ -42,6 +51,17 @@ function getMealList(){
     });
 }
 
+ // TODO: pass instructions variable into fetch call to translation API
+ function translateButton(e){
+  e.preventDefault();
+  if(e.target.classLists.contains("translate")){
+      let mealItem = e.e.target.parentElement.parentElement;
+      fetch('https://google-translate1.p.rapidapi.com/language/translate/v2/languages?target=fr')
+      .then(response => response.json())
+      .then(response => mealRecipeModal(dataset.meals));
+      
+  }
+}
 
 // get recipe of the meal
 function getMealRecipe(e){

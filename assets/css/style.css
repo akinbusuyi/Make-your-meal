@@ -274,7 +274,30 @@ body{
     width: 100%;
 }
 
-
+.form-group {
+  color: black;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.2rem;
+  text-align: center;
+  background: white;
+}
+.subtn{
+  display: flex;
+  justify-content: space-between;
+  background: #D65108;
+  font-size: 1.2rem;
+color: #fff;
+max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.2rem;
+border-radius: 0.5rem;
+text-align: center;
+box-shadow: #F2A77F;
+}
+.subtn:hover{
+  background:var(--tenne-tawny-dark);
+}
 
 
 
